@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Dashboard</title>
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/dashboard.css">
+</head>
+<body>
+    <header class="header">
+        <img src="assets/icons/logo used in header.svg" alt="Logo"/>
+        <div id="alert-div"></div>
+        <div id="announcement-div"></div>
+        <div id="menu-div"></div>
+        <ul class="header-links">
+            <li class="header-link-selected"><a href="#">DASHBOARD</a></li>
+            <li><a href="#">CONTENT</a></li>
+            <li><a href="#">USERS</a></li>
+            <li><a href="#">REPORTS</a></li>
+            <li><a href="#">ADMIN</a></li>
+        </ul>
+        <ul class="header-actions">
+            <li id="alert">
+                <a href="#" id="test2">
+                    <img id="alert-icon-hover"src="assets/icons/alerts.svg" class="alert-icon" alt="Bell"/>
+                    <p id="hide-notif" class="header-actions-overlay">2</p>
+                    
+                </a>
+            </li>
+            <li id="announcements">
+                <a href="#" id="test">
+                    <img id="announcement-icon-hover" src="assets/icons/announcements.svg" alt="Horn"/>
+                    <p id="hide-notification"class="header-actions-overlay">1</p>
+                    
+                </a>
+            </li>
+            <li class="header-actions-avatar">
+                <a href="#">
+                    <img src="assets/images/avatar.jpg" alt="Avatar"/>
+                    <p class="header-actions-overlay">T</p>
+                </a>
+            </li>
+        </ul>
+        <div class="header-dropdown" id="test1">
+            <img src="assets/icons/hamburger-menu.svg" alt="Hamburger"/>
+            <!-- <ul class="header-links header-dropdown-links">
+                <li class="header-link-selected"><a href="#">DASHBOARD</a></li>
+                <li><a href="#">CONTENT</a></li>
+                <li><a href="#">USERS</a></li>
+                <li><a href="#">REPORTS</a></li>
+                <li><a href="#">ADMIN</a></li>
+            </ul> -->
+        </div>
+        <div id="test"></div>
+        
+        
+    </header>
+    <div class="dashboard-wrapper">
+        <div class="dashboard">
+            <div class="dashboard-categories">
+                <div class="dashboard-category dashboard-category-selected">
+                    <img src="assets/icons/courses.svg" alt="Book With Bookmark"/>
+                    <h2 id="course-count-heading">
+                        4 <span>Courses</span>
+                    </h2>
+                </div>
+                <div class="dashboard-category">
+                    <img src="assets/icons/classes.svg" alt="Two avatars"/>
+                    <h2>
+                        4 <span>Classes</span>
+                    </h2>
+                </div>
+            </div>
+            <div class="dashboard-filters">
+                <p id="course-count">Showing 4 of 4 courses</p>
+                <div class="dashboard-filter">
+                    <label>Sort By:</label>
+                    <select>
+                        <option>Course Name</option>
+                    </select>
+                    <img src="assets/icons/sort.svg" alt="Up Arrow"/>
+                </div>
+            </div>
+            <div id="dashboard-items" class="dashboard-items"></div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-top">
+            <ul class="footer-top-links">
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <img src="assets/icons/logo used in footer.svg" alt="Logo"/>
+            <p>
+                <span>Copyright © 2020-2021</span>
+                <b>Zeus Systems Pvt. Ltd.</b>
+                <span>All rights reserved.</span>
+            </p>
+        </div>
+    </footer>
+    <script src="bundle.js"></script>
+    <!-- <script src="dropdown.js"></script> -->
+</body>
+</html>
